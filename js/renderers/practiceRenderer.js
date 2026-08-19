@@ -210,8 +210,10 @@ function renderWrittenQuestions(questions = []) {
 
         <article class="written-question">
 
-            <div class="question-meta">
-                ${question.marks} Mark${question.marks > 1 ? "s" : ""}
+            <div class="written-question-header">
+                <span class="marks-badge">
+                    ${question.marks} Mark${question.marks > 1 ? "s" : ""}
+                </span>
             </div>
 
             <h3>
@@ -219,19 +221,20 @@ function renderWrittenQuestions(questions = []) {
             </h3>
 
 
-            <details>
+            <details class="answer-details">
 
                 <summary>
                     Show Model Answer
                 </summary>
 
-                <div class="model-answer">
+                <div class="model-answer-content">
 
                     <p>
                         ${escapeHTML(question.answer)}
                     </p>
 
-                    <h4>Key Points</h4>
+                    <br>
+                    <strong>Key Points:</strong>
 
                     <ul>
                         ${question.keyPoints
@@ -263,8 +266,10 @@ function renderFiveMarkQuestions(questions = []) {
 
         <article class="written-question five-mark-question">
 
-            <div class="question-meta">
-                5 Marks
+            <div class="written-question-header">
+                <span class="marks-badge">
+                    5 Marks
+                </span>
             </div>
 
             <h3>
@@ -272,22 +277,24 @@ function renderFiveMarkQuestions(questions = []) {
             </h3>
 
 
-            <details>
+            <details class="answer-details">
 
                 <summary>
                     Show Model Answer
                 </summary>
 
-
-                <div class="model-answer">
+                <div class="model-answer-content five-mark-answer">
 
                     ${question.answer.introduction
             ? `
-                            <p>
-                                ${escapeHTML(
+                            <div class="answer-intro">
+                                <strong>Introduction:</strong>
+                                <p>
+                                    ${escapeHTML(
                 question.answer.introduction
             )}
-                            </p>
+                                </p>
+                            </div>
                             `
             : ""
         }
@@ -297,13 +304,13 @@ function renderFiveMarkQuestions(questions = []) {
 
                         ${question.answer.points
             .map(point => `
-                                <div>
+                                <div class="answer-point">
 
-                                    <h4>
+                                    <strong>
                                         ${escapeHTML(
                 point.title
             )}
-                                    </h4>
+                                    </strong>
 
                                     <p>
                                         ${escapeHTML(
@@ -320,27 +327,32 @@ function renderFiveMarkQuestions(questions = []) {
 
                     ${question.answer.conclusion
             ? `
-                            <p>
-                                ${escapeHTML(
+                            <div class="answer-conclusion">
+                                <strong>Conclusion:</strong>
+                                <p>
+                                    ${escapeHTML(
                 question.answer.conclusion
             )}
-                            </p>
+                                </p>
+                            </div>
                             `
             : ""
         }
 
 
-                    <h4>Key Points</h4>
+                    <div class="answer-keypoints">
+                        <strong>Key Revision Points:</strong>
 
-                    <ul>
-                        ${question.keyPoints
+                        <ul>
+                            ${question.keyPoints
             .map(point => `
-                                <li>
-                                    ${escapeHTML(point)}
-                                </li>
-                            `)
+                                    <li>
+                                        ${escapeHTML(point)}
+                                    </li>
+                                `)
             .join("")}
-                    </ul>
+                        </ul>
+                    </div>
 
                 </div>
 

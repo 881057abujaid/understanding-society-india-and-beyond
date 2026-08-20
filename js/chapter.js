@@ -149,3 +149,41 @@ function scrollToTopic(topicId) {
         topic.classList.remove("topic-highlight");
     }, 1800);
 }
+
+window.openVisualModal = function(src, title) {
+    let modal = document.getElementById("image-modal");
+    if (!modal) {
+        modal = document.createElement("div");
+        modal.id = "image-modal";
+        modal.className = "image-modal-overlay";
+        modal.innerHTML = `
+            <button type="button" class="image-modal-close" onclick="closeVisualModal()">&times;</button>
+            <img id="image-modal-img" class="image-modal-content" src="" alt="" />
+            <div id="image-modal-caption" class="image-modal-caption"></div>
+        `;
+        document.body.appendChild(modal);
+
+        modal.addEventListener("click", (e) => {
+            if (e.target === modal || e.target.classList.contains("image-modal-close")) {
+                closeVisualModal();
+            }
+        });
+
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") closeVisualModal();
+        });
+    }
+
+    const modalImg = document.getElementById("image-modal-img");
+    const modalCap = document.getElementById("image-modal-caption");
+
+    if (modalImg) modalImg.src = src;
+    if (modalCap) modalCap.textContent = title || "";
+
+    modal.style.display = "flex";
+};
+
+window.closeVisualModal = function() {
+    const modal = document.getElementById("image-modal");
+    if (modal) modal.style.display = "none";
+};

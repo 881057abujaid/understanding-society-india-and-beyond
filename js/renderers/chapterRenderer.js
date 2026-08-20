@@ -152,7 +152,7 @@ export function renderNavigation(navigation) {
             ${navigation.previousChapter
             ? `
                     <a
-                        href="./chapter.html?chapter=${navigation.previousChapter.id}"
+                        href="chapter.html?chapter=${navigation.previousChapter.id}"
                         class="nav-card previous"
                     >
                         <span>← Previous Chapter</span>
@@ -167,7 +167,7 @@ export function renderNavigation(navigation) {
             ${navigation.nextChapter
             ? `
                     <a
-                        href="./chapter.html?chapter=${navigation.nextChapter.id}"
+                        href="chapter.html?chapter=${navigation.nextChapter.id}"
                         class="nav-card next"
                     >
                         <span>Next Chapter →</span>

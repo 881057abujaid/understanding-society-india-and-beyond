@@ -419,6 +419,22 @@ const chapter1 = {
                 "यह स्थानिक (Spatial) और कालिक (Temporal) दोनों पहलुओं को जोड़ता है।",
                 "भारत की लंबी तटरेखा ने इसे ऐतिहासिक रूप से व्यापार का केंद्र बनाया।",
                 "भूगोल के उपकरण: मानचित्र, ग्लोब, एटलस, GIS और School Bhuvan Portal।"
+            ],
+
+            visuals: [
+                {
+                    id: "ch01-v01b",
+                    type: "image",
+                    src: "./assets/images/ch01/ch01-fig1.1-school-bhuvan.png",
+                    title: "NCERT School Bhuvan ISRO Portal (स्कूल भुवन उपग्रह पोर्टल)",
+                    caption: "Fig. 1.1: School Bhuvan: NCERT-Level 3 (National Remote Sensing Centre, ISRO)",
+                    explanation: "यह NCERT तथा ISRO (राष्ट्रीय दूरसंवेदन केंद्र) द्वारा निर्मित डिजिटल मानचित्र पोर्टल है, जो छात्रों को उच्च संकल्प (High-Resolution) उपग्रह छवियों, भू-स्थानिक मानचित्रों (GIS) और 3D धरातलीय आंकड़ों की मदद से अपने राज्य, जिले, शहर या गाँव का भौगोलिक अध्ययन करने की सुविधा देता है।",
+                    importantLabels: [
+                        { label: "Geospatial Data (GIS)", explanation: "डिजिटल भू-स्थानिक डेटा एवं उपग्रह मानचित्रण।" },
+                        { label: "Remote Sensing", explanation: "अंतरिक्षीय उपग्रहों द्वारा पृथ्वी का अवलोकन।" },
+                        { label: "Spatial Perspective", explanation: "स्थानों के भौगोलिक संबंध और दूरी का अध्ययन।" }
+                    ]
+                }
             ]
         },
 
@@ -523,6 +539,105 @@ const chapter1 = {
                 "इतिहास-पुराण परंपरा भारत में सांस्कृतिक मूल्यों और यादों को सहेजने की प्राचीन विधि है।",
                 "ऐतिहासिक स्रोत: साहित्यिक (Literary), पुरातात्विक (Archaeological), अभिलेखीय (Epigraphic), और मुद्राशास्त्रीय (Numismatic)।",
                 "आधुनिक इतिहास लेखन वैज्ञानिक पद्धतियों (C-14 Dating, DNA analysis) का उपयोग करता है।"
+            ],
+
+            visuals: [
+                {
+                    id: "ch01-v02a",
+                    type: "image",
+                    src: "./assets/images/ch01/ch01-fig1.2-samaveda-manuscript.png",
+                    title: "Literary Source: Sāmaveda Manuscript (सामवेद पांडुलिपि)",
+                    caption: "Fig. 1.2: The Sāmaveda manuscript, National Museum, New Delhi",
+                    explanation: "यह राष्ट्रीय संग्रहालय, नई दिल्ली में रखी प्राचीन 'सामवेद' पांडुलिपि का चित्र है। यह साहित्यिक स्रोतों (Literary Sources) का उत्कृष्ट उदाहरण है, जिससे प्राचीन भारत के धार्मिक चिंतन, वैदिक संस्कृत और काव्य परंपरा का ज्ञान प्राप्त होता है।",
+                    importantLabels: [
+                        { label: "Literary Source", explanation: "हाथ से लिखे प्राचीन धार्मिक व दार्शनिक ग्रंथ।" },
+                        { label: "Vedic Sanskrit", explanation: "वैदिक काल की भाषा और छंद।" }
+                    ]
+                },
+                {
+                    id: "ch01-v02b",
+                    type: "image",
+                    src: "./assets/images/ch01/ch01-fig1.3-tirukkural-palm-leaf.png",
+                    title: "Literary Source: Tirukkuṟaḷ Palm-Leaf Manuscript (तिरुक्कुरल ताड़पत्र पांडुलिपि)",
+                    caption: "Fig. 1.3: A traditional palm-leaf manuscript of the Tirukkuṟaḷ, an ancient Tamil text of ethical wisdom",
+                    explanation: "यह ताड़पत्र पर उकेरी गई 'तिरुक्कुरल' की पारम्परिक तमिल पांडुलिपि है। तिरुक्कुरल प्राचीन दक्षिण भारत का एक प्रसिद्ध नैतिक ग्रंथ है, जो प्राचीन तमिल समाज की नैतिक, सामाजिक और राजनीतिक सूझ-बूझ का प्रमाण देता है।",
+                    importantLabels: [
+                        { label: "Palm-Leaf Manuscript", explanation: "ताड़ के पत्तों पर लोहे की कलम से लिखी प्राचीन पांडुलिपियाँ।" },
+                        { label: "Ethical Wisdom", explanation: "सामाजिक आचार-व्यवहार और नैतिक जीवन के सिद्धांत।" }
+                    ]
+                },
+                {
+                    id: "ch01-v02c",
+                    type: "image",
+                    src: "./assets/images/ch01/ch01-fig1.4-terracotta-figurine.png",
+                    title: "Archaeological Source: Terracotta Figurine (सिंधु-सरस्वती टेराकोटा मूर्ति)",
+                    caption: "Fig. 1.4: A terracotta figurine from the Sindhu-Sarasvatī Civilisation",
+                    explanation: "यह सिंधु-सरस्वती सभ्यता (Harappan Civilisation) की एक पकी हुई मिट्टी (Terracotta) की मूर्ति है। पुरातात्विक उत्खनन से मिली ऐसी कलाकृतियाँ प्राचीन हड़प्पा कालीन समाज के शिल्प कौशल, वेशभूषा, धार्मिक मान्यताओं और दैनिक जीवन की जानकारी देती हैं।",
+                    importantLabels: [
+                        { label: "Archaeological Artifact", explanation: "उत्खनन में मिले भौतिक अवशेष व मृण्मूर्तियाँ।" },
+                        { label: "Sindhu-Sarasvatī", explanation: "भारत की प्राचीनतम कांस्ययुगीन नगरीय सभ्यता।" }
+                    ]
+                },
+                {
+                    id: "ch01-v02d",
+                    type: "image",
+                    src: "./assets/images/ch01/ch01-fig1.5-vishnu-sculpture.png",
+                    title: "Archaeological Source: 12th Century Viṣṇu Sculpture (विष्णु प्रतिमा)",
+                    caption: "Fig. 1.5: A sculpture of Viṣṇu from the 12th century CE",
+                    explanation: "यह 12वीं शताब्दी ईस्वी (मध्यकालीन भारत) की पत्थर पर तराशी गई भगवान विष्णु की उत्कृष्ट प्रतिमा है। यह मूर्तिकला प्राचीन एवं मध्यकालीन भारतीय स्थापत्य कला, धार्मिक परंपराओं और धातुकर्म/पाषाण कला के विकास का साक्ष्य प्रस्तुत करती है।",
+                    importantLabels: [
+                        { label: "Sculpture Art", explanation: "मध्यकालीन पाषाण स्थापत्य और धार्मिक कला।" },
+                        { label: "Historical Chronology", explanation: "12वीं शताब्दी ईस्वी के कलात्मक मानकों का अध्ययन।" }
+                    ]
+                },
+                {
+                    id: "ch01-v02e",
+                    type: "image",
+                    src: "./assets/images/ch01/ch01-fig1.6-brahmi-inscription.png",
+                    title: "Epigraphic Source: Gupta Period Brahmi Inscription (गुप्तकालीन ब्राह्मी अभिलेख)",
+                    caption: "Fig. 1.6: Brahmi inscription on part of a pillar belonging to the Gupta period",
+                    explanation: "यह गुप्त काल के स्तंभ पर उकेरा गया ब्राह्मी लिपि का शिलालेख है। पुरालेखीय स्रोत (Epigraphic Sources) पत्थर या धातु पर लिखे होने के कारण टिकाऊ होते हैं और राजाओं के आदेश, युद्ध विजय और प्रशासनिक घोषणाओं का सीधा प्रमाण देते हैं।",
+                    importantLabels: [
+                        { label: "Epigraphy (अभिलेखशास्त्र)", explanation: "शिलालेखों और ताम्रपत्रों का अध्ययन।" },
+                        { label: "Brahmi Script", explanation: "भारत की प्राचीनतम लिपि जिससे अधिकांश भारतीय लिपियाँ विकसित हुईं।" }
+                    ]
+                },
+                {
+                    id: "ch01-v02f",
+                    type: "image",
+                    src: "./assets/images/ch01/ch01-fig1.7-kannada-inscription-hampi.png",
+                    title: "Epigraphic Source: Emperor Krishnadeva Raya Inscription (कृष्णदेवराय का कन्नड़ अभिलेख)",
+                    caption: "Fig. 1.7: Kannada inscription of Emperor Krishnadeva Raya at the underground Shiva temple, Prasanna Virupaksha Temple, Hampi",
+                    explanation: "यह हम्पी के प्रसन्ना विरुपाक्ष मंदिर (उत्तराखंड/कर्नाटक विजयनगर साम्राज्य) में उत्कीर्ण राजा कृष्णदेव राय का कन्नड़ शिलालेख है। यह अभिलेखीय साक्ष्य मंदिर को दिए गए दान, विजयनगर साम्राज्य की प्रशासनिक भाषा और धार्मिक नीतियों की पुष्टि करता है।",
+                    importantLabels: [
+                        { label: "Vijayanagara Empire", explanation: "14वीं-16वीं शताब्दी का समृद्ध दक्षिण भारतीय साम्राज्य।" },
+                        { label: "Direct Evidence", explanation: "सम्राटों द्वारा शिलाओं पर उत्कीर्ण समकालीन अभिलेख।" }
+                    ]
+                },
+                {
+                    id: "ch01-v02g",
+                    type: "image",
+                    src: "./assets/images/ch01/ch01-fig1.8-samudragupta-coin.png",
+                    title: "Numismatic Source: Samudragupta Gold Coin (समुद्रगुप्त का स्वर्ण सिक्का)",
+                    caption: "Fig. 1.8: A coin issued by King Samudragupta, 4th century CE",
+                    explanation: "यह चौथी शताब्दी ईस्वी के गुप्त सम्राट समुद्रगुप्त द्वारा जारी किया गया सोने का सिक्का है। सिक्कों से इतिहासकार साम्राज्य की आर्थिक समृद्धि, धातु शोधन तकनीक, राजा की उपाधियों और उसकी कलात्मक रुचि का पता लगाते हैं।",
+                    importantLabels: [
+                        { label: "Numismatics (मुद्राशास्त्र)", explanation: "प्राचीन सिक्कों और मुद्राओं का अध्ययन।" },
+                        { label: "Gupta Golden Age", explanation: "गुप्त काल की आर्थिक समृद्धि एवं स्वर्ण मुद्राएँ।" }
+                    ]
+                },
+                {
+                    id: "ch01-v02h",
+                    type: "image",
+                    src: "./assets/images/ch01/ch01-fig1.9-mughal-jahangir-coin.png",
+                    title: "Numismatic Source: Jahangir's Mughal Zodiac Coin (जहांगीर का धनु राशि सिक्का)",
+                    caption: "Fig. 1.9: A Mughal coin issued during the reign of Jahangir, showing the zodiac sign 'Sagittarius'",
+                    explanation: "यह मुग़ल सम्राट जहांगीर के शासनकाल में जारी सिक्का है, जिस पर धनु राशि (Sagittarius) का चित्र उकेरा गया है। यह दर्शाता है कि प्राचीन व मध्यकालीन भारत में सिक्के न केवल विनिमय का साधन थे, बल्कि खगोलशास्त्र और व्यक्तिगत प्राथमिकताओं की कलात्मक अभिव्यक्ति भी थे।",
+                    importantLabels: [
+                        { label: "Zodiac Coinage", explanation: "जहांगीर द्वारा चलाए गए राशि-चक्र (Zodiac) वाले दुर्लभ सिक्के।" },
+                        { label: "Mughal Numismatics", explanation: "मध्यकालीन भारतीय आर्थिक व टकसाल व्यवस्था।" }
+                    ]
+                }
             ]
         },
 
@@ -615,6 +730,22 @@ const chapter1 = {
                 "प्राचीन भारतीय चिंतन में राजनीति को धर्म, अर्थ और राजधर्म से जोड़ा गया।",
                 "कौटिल्य का अर्थशास्त्र और शुक्रनीति न्याय और शासन पर महत्वपूर्ण ग्रंथ हैं।",
                 "राजनीतिक सत्ता को विशेषाधिकार नहीं बल्कि प्रजा कल्याण की जिम्मेदारी माना गया।"
+            ],
+
+            visuals: [
+                {
+                    id: "ch01-v03",
+                    type: "image",
+                    src: "./assets/images/ch01/ch01-panchayati-raj.png",
+                    title: "3-Tier Panchayati Raj System (त्रिस्तरीय पंचायती राज व्यवस्था)",
+                    caption: "चित्र 1.3: ग्राम पंचायत, पंचायत समिति और जिला परिषद",
+                    explanation: "यह चित्र भारत में स्थानीय स्वशासन (Local Governance) के तीन स्तरों को दर्शाता है—गाँव के स्तर पर ग्राम पंचायत, ब्लॉक स्तर पर पंचायत समिति, और जिला स्तर पर जिला परिषद।",
+                    importantLabels: [
+                        { label: "Gram Panchayat", explanation: "गाँव के स्तर पर प्रत्यक्ष लोकतांत्रिक संस्था।" },
+                        { label: "Panchayat Samiti", explanation: "ब्लॉक / प्रखंड स्तर पर पंचायतों की समन्वय संस्था।" },
+                        { label: "Zilla Parishad", explanation: "जिले के स्तर पर संपूर्ण विकास योजनाओं का समन्वय।" }
+                    ]
+                }
             ]
         },
 

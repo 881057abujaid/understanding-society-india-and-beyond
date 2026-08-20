@@ -24,7 +24,7 @@ function renderChaptersList() {
                 <h4>${escapeHTML(chapter.title.hindi)}</h4>
                 <p>${escapeHTML(chapter.overview?.shortHindi || "")}</p>
             </div>
-            <a href="./chapter.html?chapter=${chapter.id}" class="primary-button">
+            <a href="chapter.html?chapter=${chapter.id}" class="primary-button">
                 Start Learning →
             </a>
         </article>

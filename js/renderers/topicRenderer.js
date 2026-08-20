@@ -38,6 +38,9 @@ export function renderTopic(topic) {
         ${renderExplanation(topic.explanation)}
 
 
+        ${renderVisuals(topic.visuals)}
+
+
         ${renderCuriosity(topic.curiosityQuestions)}
 
 
@@ -274,6 +277,63 @@ function renderQuickRevision(points = []) {
                 `).join("")}
             </ul>
 
+        </section>
+    `;
+}
+
+
+function renderVisuals(visuals = []) {
+    if (!visuals || !visuals.length) {
+        return "";
+    }
+
+    return `
+        <section class="topic-section topic-visuals">
+            <div class="section-heading small">
+                <span>🌍</span>
+                <h4>Visual Explanation</h4>
+            </div>
+
+            <div class="visuals-list">
+                ${visuals.map(visual => `
+                    <article class="visual-explanation-card" id="${escapeHTML(visual.id || '')}">
+                        <div class="visual-image-wrapper" onclick="window.openVisualModal && window.openVisualModal('${escapeHTML(visual.src)}', '${escapeHTML(visual.title || '')}')">
+                            <img 
+                                src="${escapeHTML(visual.src)}" 
+                                alt="${escapeHTML(visual.title || 'Diagram')}" 
+                                loading="lazy"
+                                class="visual-img"
+                            />
+                            <div class="zoom-hint">🔍 Click to Expand</div>
+                        </div>
+
+                        <div class="visual-info">
+                            <h5>${escapeHTML(visual.title)}</h5>
+                            ${visual.caption ? `<p class="visual-caption">${escapeHTML(visual.caption)}</p>` : ''}
+
+                            ${visual.explanation ? `
+                                <div class="visual-explanation-text">
+                                    <strong>💡 क्या देख रहे हैं?</strong>
+                                    <p>${escapeHTML(visual.explanation)}</p>
+                                </div>
+                            ` : ''}
+
+                            ${visual.importantLabels?.length ? `
+                                <div class="visual-labels-box">
+                                    <h6>📌 Important Labels</h6>
+                                    <ul>
+                                        ${visual.importantLabels.map(item => `
+                                            <li>
+                                                <strong>${escapeHTML(item.label)}</strong>: ${escapeHTML(item.explanation)}
+                                            </li>
+                                        `).join('')}
+                                    </ul>
+                                </div>
+                            ` : ''}
+                        </div>
+                    </article>
+                `).join('')}
+            </div>
         </section>
     `;
 }
